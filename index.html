@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>«MELIO»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>«MELIO»</h1>
+		<div class="rootpage__info">
+
+		</div>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Головна</a></li>
+			<li><a target="_blank" href="categories.html">Категоії</a></li>
+			<li><a target="_blank" href="categories-more.html">Категорії з більшою кількістю товару</a></li>
+			<li><a target="_blank" href="categories-more-out-of-stock.html">Категорії з більшою кількістю товару + відсутні позиції</a></li>
+			<li><a target="_blank" href="brand-section.html">Розділ компанії</a></li>
+			<li><a target="_blank" href="basket.html">Кошик</a></li>
+			<li><a target="_blank" href="basket-unavailable.html">Кошик + відстуні позиції</a></li>
+			<li><a target="_blank" href="delivery.html">Доставка</a></li>
+			<li><a target="_blank" href="delivery-promo.html">Доставка з промокодом</a></li>
+			<li><a target="_blank" href="delivery-without-variant.html">Доставка 2</a></li>
+			<li><a target="_blank" href="delivery-self-pickup.html">Доставка самовивіз</a></li>
+			<li><a target="_blank" href="successful-order.html">Успішне замовлення</a></li>
+			<li><a target="_blank" href="cancellation-order.html">Замовлення відмова</a></li>
+			<li><a target="_blank" href="payment-error-order.html">Замовлення не оплачене</a></li>
+			<li><a target="_blank" href="404.html">Неіснуюча сторінка</a></li>
+			<li><a target="_blank" href="news.html">Новини</a></li>
+			<li><a target="_blank" href="article.html">Стаття</a></li>
+			<li><a target="_blank" href="personal-acc.html">Особистий кабінет</a></li>
+			<li><a target="_blank" href="personal-profile.html">Особистий кабінет. Профіль</a></li>
+			<li><a target="_blank" href="personal-orders.html">Особистий кабінет. Замовлення</a></li>
+			<li><a target="_blank" href="personal-orders-empty.html">Особистий кабінет. Замовлення. Пусто</a></li>
+			<li><a target="_blank" href="login.html">Авторизація</a></li>
+			<li><a target="_blank" href="registration.html">Реєстрація</a></li>
+			<li><a target="_blank" href="product-card.html">Картка товару</a></li>
+			<li><a target="_blank" href="product-card-empty.html">Картка товару який відсутній + порівняння</a></li>
+			<li><a target="_blank" href="comparison-page.html">Порівняння</a></li>
+		</ol>
+
+
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		min-width: 100%;
+		max-height: 100%;
+
+
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		background: #212534;
+
+		display: flex;
+
+		justify-content: center;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #4f6374;
+		font-weight: 600;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #4f6374;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		max-height: 100%;
+		overflow: hidden;
+
+
+
+	}
+
+	@property --rotate {
+		syntax: "<angle>";
+		initial-value: 132deg;
+		inherits: false;
+	}
+
+	:root {
+		--rootpage-height: 65vh;
+		--rootpage-width: calc(var(--rootpage-height) / 1.5);
+	}
+
+
+	.rootpage {
+		margin-top: 20px;
+		max-width: 40%;
+		padding: 15px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: #F6F4F5;
+		border-radius: 6px;
+		text-align: center;
+		color: #4f6374;
+
+
+	}
+
+
+	.rootpage::before {}
+
+	.rootpage::after {}
+
+	@keyframes spin {
+		0% {
+			--rotate: 0deg;
+		}
+
+		100% {
+			--rotate: 360deg;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 10px 15px;
+		}
+	}
+
+	h1 {
+		color: #4f6374;
+		font-size: 2.5rem;
+		margin: 10px 10px 1.25rem 10px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #4f6374;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+
+	}
+
+	.rootpage__list li {
+		padding-left: 5px;
+		text-align: left;
+
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 10px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 10px;
+		}
+	}
+
+	.rootpage__contacts {}
+
+	.rootpage__contacts a {
+		color: #4f6374;
+	}
+</style>
+
+</html>
